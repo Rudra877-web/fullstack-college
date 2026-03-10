@@ -42,10 +42,10 @@ function disableAllBoxes() {
 
 function checkWinner() {
     for (let i = 0; i < winPatterns.length; i++) {
-        var pattern = winPatterns[i];
-        var a = boxes[pattern[0]].textContent;
-        var b = boxes[pattern[1]].textContent;
-        var c = boxes[pattern[2]].textContent;
+        const pattern = winPatterns[i];
+        const a = boxes[pattern[0]].textContent;
+        const b = boxes[pattern[1]].textContent;
+        const c = boxes[pattern[2]].textContent;
 
         if (a !== "" && a === b && b === c) {
             updateStatus("Congratulations, " + a + " wins!");
